@@ -35,9 +35,9 @@ for (j = 1; j <= 5; j++) {
 // //2*. Преобразовать 2 задачу в функцию, принимающую на вход строку, которая и будет выводиться в консоль (как в условии смайлик), а также количество строк для вывода 
 // //e.g. function printSmile(stroka, numberOfRows)
 
-function printSmile(i, x) {
-  for (j = 1; j <= x; j++) {
-    console.log(i.repeat(j));
+function printSmile(stroka, numberOfRows) {
+  for (j = 1; j <= numberOfRows; j++) {
+    console.log(stroka.repeat(j));
   }
 }
 printSmile(':)', 5)
@@ -67,7 +67,9 @@ function getWordStructure(word) {
   return (`${vСount} + ${cСount}`);
 
 }
-console.log(getWordStructure('Check-List'));
+console.log(getWordStructure('case'));
+console.log(getWordStructure('Case'));
+console.log(getWordStructure('Check-list'));
 
 
 //4**. Написать функцию, которая проверяет, является ли слово палиндромом
