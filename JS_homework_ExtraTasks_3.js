@@ -50,7 +50,7 @@ printSmile(':)', 5)
 
 function getWordStructure(word) {
   let w = word.toLowerCase().split('');
-  let vowel = 'aei';
+  let vowel = 'aeiou';
   let cons = 'bcdfghjklmnpqrstvwxyz';
   let vСount = 0;
   let cСount = 0;
